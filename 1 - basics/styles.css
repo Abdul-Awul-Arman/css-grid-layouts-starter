@@ -4,3 +4,24 @@ body {
   margin: 30px;
   font-family: "Poppins";
 }
+
+div{
+  background-color: aqua;
+  border: 1px solid black;
+  width: 300px;
+}
+
+main{
+  display:grid;
+  grid-template-columns: 1fr 1fr  1fr 1fr;
+  grid-template-rows: repeat(3,300px);
+  background-color: #ddd;
+  justify-items: start;
+  align-items: center;
+}
+
+main div:nth-child(1){
+  grid-column: 1/1;
+  /* width: 100%; */
+  /* justify-content: center; */
+}
